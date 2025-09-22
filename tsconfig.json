@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "moduleResolution": "bundler",  // or "node16"
     "jsx": "react-jsx",
-    "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "target": "esnext",
     "module": "esnext",
-    "lib": ["dom", "esnext"]
+    "lib": ["dom", "esnext"],
+    "types": ["node"]
   }
 }

@@ -1,0 +1,11 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import "./index.css";
+import Layout from "./components/layout";
+import Home from "./pages/Home";
+import Destination from "./pages/Destination";
+import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
+ReactDOM.createRoot(document.getElementById("root")).render(_jsx(React.StrictMode, { children: _jsx(BrowserRouter, { children: _jsx(Routes, { children: _jsxs(Route, { element: _jsx(Layout, {}), children: [_jsx(Route, { index: true, path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/destination", element: _jsx(Destination, {}) }), _jsx(Route, { path: "/crew", element: _jsx(Crew, {}) }), _jsx(Route, { path: "/technology", element: _jsx(Technology, {}) }), _jsx(Route, { path: "/destination", element: _jsx(Navigate, { to: "/destination/moon", replace: true }) }), _jsx(Route, { path: "/destination/:planetId", element: _jsx(Destination, {}) })] }) }) }) }));
