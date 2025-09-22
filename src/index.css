@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --font-barlowCondensed: "Barlow Condensed", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-bellefair: "Bellefair", serif;
+}
